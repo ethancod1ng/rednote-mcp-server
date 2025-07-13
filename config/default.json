@@ -1,0 +1,26 @@
+{
+  "api": {
+    "timeout": 15000,
+    "retries": 3,
+    "retryDelay": 2000,
+    "rateLimit": {
+      "requests": 100,
+      "window": 60000
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "ttl": 300000,
+    "maxSize": 1000
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/app.log",
+    "maxSize": "10m",
+    "maxFiles": "14d"
+  },
+  "server": {
+    "name": "rednote-mcp-server",
+    "version": "1.0.0"
+  }
+}
